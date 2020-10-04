@@ -677,4 +677,34 @@ nav ul li {
     width: 40%;
   }
 }
+
+@media screen and (max-width: 375px) {
+  #o-nas {
+    width: 150%;
+  }
+  #o-nas p {
+    font-size: 1.5rem;
+  }
+  #o-nas img {
+    display: none;
+  }
+  #nase-speciality {
+    top: 40px;
+    left: 0;
+  }
+  #nase-speciality h3 {
+    font-size: 4rem;
+  }
+  #nase-speciality p {
+    width: 80%;
+    left: 40px;
+  }
+  .link-arrow {
+    width: 60%;
+  }
+  .icon {
+    left: 130px;
+    top: 60px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

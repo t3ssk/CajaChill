@@ -297,5 +297,33 @@ nav ul{
     }
 }
 
-
+@media screen and (max-width: 375px){
+    #o-nas{
+        width: 150%;
+        p{
+            font-size: 1.5rem;
+        }
+        img{
+            display: none;
+        }
+    }
+    #nase-speciality{
+        top: 40px;
+        left: 0;
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            width: 80%;
+            left: 40px;
+        }
+    }
+    .link-arrow{
+        width: 60%;
+    }
+    .icon{
+        left: 130px;
+        top: 60px;
+    }
+}
 
