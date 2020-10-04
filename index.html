@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,42 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 <link rel="stylesheet" href="assets/styles/style.css">
 <title>Čaj & chill</title>
 </head>
 <body>
 <div id="main">
 
-    <p class="border border-light border-right-0" id="logo-small"><a href="/">Čaj & Chill</a></p>
-    <nav>
-        <ul class="row  w-50 mx-auto">
-            <li class="col-6 border border-light border-bottom-0 border-right-0"><a href="/o-nas">O nás</a></li>
-            <li class="col-6 border border-light border-bottom-0"><a href="/navstivte">Navštivte nás</a></li>
-            <li class="col-6 border border-light border-right-0"><a href="/rezervace">Rezervujte si stůl</a></li>
-            <li class="col-6 border border-light"><a href="/menu">Ochutnejte</a></li>
+    
+      <p class="border border-light border-right-0" id="logo-small"><a href="/">Čaj & Chill</a></p>
+    <nav class="desktop">
+            <ul class="row w-50 mx-auto">
+                <li class="col-6 border border-light border-bottom-0 border-right-0"><a href="/o-nas">O nás</a></li>
+                <li class="col-6 border border-light border-bottom-0"><a href="/navstivte">Navštivte nás</a></li>
+                <li class="col-6 border border-light border-right-0"><a href="/rezervace">Rezervujte si stůl</a></li>
+                <li class="col-6 border border-light"><a href="/menu">Ochutnejte</a></li>
+            </ul>
+    </nav>
+    <nav class="mobile">
+
+         <i class="fas fa-bars navinic"></i>
+        <ul class="menuOnClick">
+            <li id="close"><a href="#"><i class="fa fa-times"></i></a></li>
+            <li><a href="#o-nas">O nás</a></li>
+            <li><a href="/navstivte">Navštivte nás</a></li>
+            <li><a href="/rezervace">Rezervujte si stůl</a></li>
+            <li><a href="/menu">Ochutnejte</a></li>
         </ul>
     </nav>
 <header>
     <h1>Čaj & Chill</h1>
 </header>
+<section id="o-nas">
+        <p>Jsme moderní čajovna v centru Prahy, která dělá z popíjení toho nejlepšího fair-trade sourcovaného čaje designový zážitek. </p>
+        <img src="assets/imgs/photo-1599000117646-493e27e0e609.jpeg" alt="Náš čajový specialista" class="images">
+</section>
 </div>
 
 <script src="grained.js"></script>

@@ -9,3 +9,13 @@ var options = {
   }
 
 grained('#main',options)
+const menuOn = document.querySelector('.navinic')
+const menu = document.querySelector('.menuOnClick')
+const menuClose = document.querySelector('#close')
+
+menuOn.addEventListener('click', function(){
+  menu.classList.add('active')
+})
+menuClose.addEventListener('click', function(){
+  menu.classList.remove('active')
+})
