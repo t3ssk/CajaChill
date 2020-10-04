@@ -34,6 +34,12 @@ nav ul {
    @include heading(2.3rem);
 }
 
+#o-nas{
+    p{
+        
+        @include heading(3rem);
+    }}
+
 /* COLORS */
 body{
     background-color: $color1;
@@ -49,6 +55,11 @@ a{
             text-decoration: none;}
 }
 
+#o-nas{
+    p{
+        color: rgb(53, 53, 53);
+        background-color: white;}}
+
 /* DECORATIVE */
 .border-light{
     border-color: rgba(255, 255, 255, 0.322) !important;
@@ -59,7 +70,7 @@ body {
     background-position: center 100px;
     background-repeat: no-repeat;
 }
-/* POSITIONING */
+/* POSITIONING & SIZING*/
 body{
     left: 0;
 }
@@ -87,7 +98,24 @@ nav ul{
     position: relative;
     padding-left: 10px;
 }
-
+#o-nas{
+    position: relative;
+    left: 10%;
+    p{
+        position: relative;
+        z-index: 4;
+        width: 50%;
+        padding: 3%;
+    }
+    img{
+        position: relative;
+        top: -380px;
+        left: 40%;
+        z-index: 0;
+        width: 40%;
+        height: auto;
+    }
+}
 /* GRAIN */
 #main{
     pointer-events: none;
@@ -100,6 +128,77 @@ nav ul{
 
 #main::before{
     z-index: 10;
+}
+/* ANIMATION */
+.images{
+    transform: translate(2000px);
+}
+
+.images.active{
+    transform: translate(0px);
+    transition: 1.5s cubic-bezier(.33,.32,.7,.91);
+}
+
+
+
+
+
+#nase-speciality{
+    pointer-events: initial;
+    position: relative;
+    top: -280px;
+    left: 0%;
+    font-family: $font2;
+    font-weight: 100;
+    h3{
+        font-size: 6rem;
+        text-transform: uppercase;
+        padding: 2%;
+        transition: 1s ease-in;
+        &:hover{
+            transition: 1s ease-in;
+            color: white;
+            cursor: crosshair;
+        }
+    }
+
+    p{
+        width: 50%;
+        position: relative;
+        left: 10%;
+        top: -100px;
+       
+    }
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+    left: 75%;
+    
+}
+.link-arrow{
+    position: relative;
+    top: -160px;
+    left: 25%;
+    width: 20%;
+}
+.icon{
+    cursor: crosshair;
+    position: relative;
+    left: 53%;
+    width: 30%;
+    transition: 0.7s ease-in;
+    
+    transform-origin: right;
+    &:hover{
+        opacity: 0.3;
+        transition: 0.7s ease-out;
+    }
 }
 
 
@@ -176,32 +275,23 @@ nav ul{
         transform: translate(0px);
         transition: 1s cubic-bezier(.55,.55,.81,.4);
     }
-}
-
-
-
-
-
-//////////////////////////
-#o-nas{
-    position: relative;
-    left: 10%;
-    p{
-        position: relative;
-        z-index: 4;
-        @include heading(3rem);
-        width: 50%;
-        color: rgb(53, 53, 53);
-        background-color: white;
-        padding: 3%;
+    #o-nas{
+        p{
+            font-size: 2rem;
+        }
     }
-
-    img{
-        position: relative;
-        top: -380px;
-        left: 40%;
-        z-index: 0;
+}
+@media screen and (max-width: 650px){
+    #nase-speciality{
+        top: -200px;
+        h3{
+            font-size: 4rem;
+        }
+    }
+    .link-arrow{
         width: 40%;
-        height: auto;
     }
 }
+
+
+
