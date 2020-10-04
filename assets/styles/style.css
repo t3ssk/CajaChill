@@ -344,6 +344,13 @@ template {
 }
 
 /* GENERAL */
+::-moz-selection {
+  background-color: #B7CBD8;
+}
+::selection {
+  background-color: #B7CBD8;
+}
+
 .mobile {
   display: none;
 }

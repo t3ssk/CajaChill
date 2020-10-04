@@ -3,6 +3,9 @@
 @import "mixins.scss";
 
 /* GENERAL */
+::selection{
+    background-color: $color1;
+}
 .mobile{
     display: none;
 }
