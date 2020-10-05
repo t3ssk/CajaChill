@@ -365,16 +365,6 @@ body {
   font-family: "Petrona";
 }
 
-header h1 {
-  font-family: 'Petrona';
-  font-style: italic;
-  font-weight: 900;
-  font-size: 20vw;
-  -webkit-transform: scale(1, 1.4);
-          transform: scale(1, 1.4);
-  margin-left: 1%;
-}
-
 nav ul {
   font-size: 0.8rem;
   font-weight: 500;
@@ -394,30 +384,9 @@ nav ul li {
   font-size: 2.3rem;
 }
 
-#o-nas p {
-  font-family: 'Petrona';
-  font-style: italic;
-  font-weight: 900;
-  font-size: 3rem;
-}
-
-#nase-speciality {
-  font-family: "Raleway";
-  font-weight: 500;
-}
-
-#nase-speciality h3 {
-  font-size: 6rem;
-  text-transform: uppercase;
-}
-
 /* COLORS */
 body {
   background-color: #B7CBD8;
-}
-
-header h1 {
-  color: white;
 }
 
 a {
@@ -429,31 +398,14 @@ a:hover {
   text-decoration: none;
 }
 
-#o-nas p {
-  color: #353535;
-  background-color: white;
-}
-
 /* DECORATIVE */
 .border-light {
   border-color: rgba(255, 255, 255, 0.322) !important;
 }
 
-.hero {
-  background-image: url("../imgs/photo-1515094264130-1c21fc4c9dcd.jpeg");
-  background-size: 80%;
-  background-position: center 100px;
-  background-repeat: no-repeat;
-}
-
 /* POSITIONING & SIZING*/
 body {
   left: 0;
-}
-
-header h1 {
-  padding-top: 20vh;
-  overflow: hidden;
 }
 
 nav ul {
@@ -476,45 +428,6 @@ nav ul li {
   padding-top: 4px;
   position: relative;
   padding-left: 10px;
-}
-
-#o-nas {
-  position: relative;
-  left: 10%;
-}
-
-#o-nas p {
-  position: relative;
-  z-index: 4;
-  width: 50%;
-  padding: 3%;
-}
-
-#o-nas img {
-  position: relative;
-  top: -380px;
-  left: 40%;
-  z-index: 0;
-  width: 40%;
-  height: auto;
-}
-
-#nase-speciality {
-  pointer-events: initial;
-  position: relative;
-  top: -280px;
-  left: 0%;
-}
-
-#nase-speciality h3 {
-  padding: 2%;
-}
-
-#nase-speciality p {
-  width: 50%;
-  position: relative;
-  left: 10%;
-  top: -100px;
 }
 
 .circle {
@@ -578,22 +491,83 @@ nav ul li {
   transition: 1.5s cubic-bezier(0.33, 0.32, 0.7, 0.91);
 }
 
-#nase-speciality h3 {
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+.o-nas {
+  width: 80vw;
+  margin: 5% auto;
 }
 
-#nase-speciality h3:hover {
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
-  color: white;
-  cursor: crosshair;
+.o-nas h2 {
+  margin-left: 10%;
+  width: 60%;
+  font-family: "Raleway";
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.o-nas p {
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-style: italic;
+  padding: 10%;
+}
+
+.o-nas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.img1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 5 / 3;
+}
+
+.img1 img {
+  width: 70%;
+}
+
+.img2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 2 / 6 / 4;
+}
+
+.img2 img {
+  width: 70%;
+}
+
+.popisek {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 3 / 3 / 5;
+  z-index: 3;
+  margin-left: -100px;
 }
 
 footer {
   pointer-events: initial;
   font-family: "Raleway";
-  margin-top: -200px;
   padding-bottom: 50px;
 }
 
@@ -694,44 +668,15 @@ footer input {
     -webkit-transition: 1s cubic-bezier(0.55, 0.55, 0.81, 0.4);
     transition: 1s cubic-bezier(0.55, 0.55, 0.81, 0.4);
   }
-  #o-nas p {
-    font-size: 2rem;
-  }
 }
 
-@media screen and (max-width: 650px) {
-  #nase-speciality {
-    top: -200px;
-  }
-  #nase-speciality h3 {
-    font-size: 4rem;
-  }
+@media screen and (max-width: 880px) and (max-width: 650px) {
   .link-arrow {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 375px) {
-  #o-nas {
-    width: 150%;
-  }
-  #o-nas p {
-    font-size: 1.5rem;
-  }
-  #o-nas img {
-    display: none;
-  }
-  #nase-speciality {
-    top: 40px;
-    left: 0;
-  }
-  #nase-speciality h3 {
-    font-size: 4rem;
-  }
-  #nase-speciality p {
-    width: 80%;
-    left: 40px;
-  }
+@media screen and (max-width: 880px) {
   .link-arrow {
     width: 60%;
   }
@@ -740,4 +685,4 @@ footer input {
     top: 60px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=o-nas.css.map */

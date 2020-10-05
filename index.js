@@ -42,7 +42,7 @@ const imgs = document.querySelectorAll('.images');
 function slideIn(e){
   if(e){
     imgs.forEach(image=>{
-      const slideInAt = (window.scrollY+window.innerHeight) - (image.height/2);
+      const slideInAt = (window.scrollY+window.innerHeight) - ((image.height/2)+200);
       const isShown = slideInAt > image.offsetTop;
       if(isShown){
         image.classList.add('active')
